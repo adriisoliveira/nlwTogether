@@ -13,11 +13,12 @@ type Props = {
 
 export function CategorySelect({ categorySelected }: Props) {
   return (
-    <ScrollView>
+    <ScrollView
       horizontal
       style={styles.container}
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={{ paddingRight: 40 }}
+    >
       {
         categories.map(category => (
           <Category
