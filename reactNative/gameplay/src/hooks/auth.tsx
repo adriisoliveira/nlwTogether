@@ -68,7 +68,7 @@ function AuthProvider({ children }: AuthProviderProps) {
 
         const firstName = userInfo.data.username.split(' ')[0];
         userInfo.data.avatar = `${CDN_IMAGE}/avatars/${userInfo.data.id}/${userInfo.data.avatar}.png`
-
+        console.log(userInfo.data.avatar);
         const userData = {
           ...userInfo.data,
           firstName,

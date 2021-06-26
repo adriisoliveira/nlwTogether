@@ -68,8 +68,6 @@ export function AppointmentDetails() {
       url: widget.instant_invite,
 
     });
-    console.log(widget.instant_invite);
-
   }
 
   function handleOpenGuild() {
