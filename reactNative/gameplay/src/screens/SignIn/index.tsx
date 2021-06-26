@@ -8,13 +8,13 @@ import {
   ActivityIndicator
 } from "react-native";
 
-import { useAuth } from "../../hooks/auth"
+import { styles } from "./styles";
+import { theme } from "../../global/styles/theme";
 
+import { useAuth } from "../../hooks/auth"
 import { Background } from "../../components/Background";
 import { ButtonIcon } from "../../components/ButtonIcon";
-import { styles } from "./styles";
 import IllustrationImg from '../../assets/illustration.png'
-import { theme } from "../../global/styles/theme";
 
 export function SignIn() {
   const { user, signIn, loading } = useAuth();

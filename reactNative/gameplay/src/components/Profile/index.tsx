@@ -1,27 +1,31 @@
-import React from "react";
-import { View, Text, Alert } from "react-native";
+import React, { useState } from "react";
+import { View, Text, Alert, TouchableOpacity } from "react-native";
 import { RectButton } from "react-native-gesture-handler"
-import { useAuth } from "../../hooks/auth";
-import { Avatar } from "../Avatar";
+
+
 import { styles } from "./styles";
+import { Avatar } from "../Avatar";
+import { useAuth } from "../../hooks/auth";
+import { ModalSignOut } from "../../components/ModalSignOut";
+import { ButtonsExit } from "../ButtonsExit";
+import { theme } from "../../global/styles/theme";
 
 
 export function Profile() {
-
   const { user, signOut } = useAuth();
+  const [openSignOut, setOpenSignOut] = useState(false);
 
+  //console.log(user.avatar);
   function handleSignOut() {
-    Alert.alert('Logout', 'Deseja sair do GamePlay?',
-      [
-        {
-          text: 'Não',
-          style: 'cancel'
-        },
-        {
-          text: 'Sim',
-          onPress: () => signOut()
-        }
-      ])
+    setOpenSignOut(true);
+  }
+
+  function exitSignOut() {
+    setOpenSignOut(false);
+  }
+
+  function handleCloseSignOut() {
+    setOpenSignOut(false);
   }
   return (
     <View style={styles.container}>
@@ -38,7 +42,42 @@ export function Profile() {
 
         <Text style={styles.message}> Hoje é dia de vitória</Text>
       </View>
-    </View>
+
+      <ModalSignOut visible={openSignOut} closeModal={handleCloseSignOut}>
+        <View style={styles.containerText}>
+          <Text style={styles.question}> Deseja sair do
+              <Text style={styles.text}> Game
+                <Text style={styles.colorText}>Play
+                  <Text style={styles.text}>?</Text>
+              </Text>
+            </Text>
+          </Text>
+        </View>
+
+        <View style={styles.containerButtons}>
+          <TouchableOpacity
+            style={styles.buttonNo}
+            onPress={handleCloseSignOut}
+            activeOpacity={0.7}
+          >
+            <Text style={styles.greeting}>
+              Não
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.buttonYes}
+            onPress={() => signOut()}
+            activeOpacity={0.7}
+          >
+            <Text style={styles.greeting} >
+              Sim
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </ModalSignOut>
+
+    </View >
   );
 
 }
