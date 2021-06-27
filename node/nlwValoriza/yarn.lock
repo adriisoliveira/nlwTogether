@@ -4,7 +4,7 @@
 
 "@sqltools/formatter@^1.2.2":
   version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#1185726610acc37317ddab11c3c7f9066966bd20"
+  resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#114CzdY5JvXi4gQE1NGpPhS13DXMDYyV6966bd20"
   integrity sha512-O3uyB/JbkAEMZaP3YqyHH7TMnex7tWyCbCI4EfJdOCoN6HIhqdJBWTM6aCCiWQ/5f5wxjgU735QAIpJbjDvmzg==
 
 "@types/bcryptjs@^2.4.2":
@@ -63,10 +63,10 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
-"@types/node@*", "@types/node@^15.12.4":
-  version "15.12.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.4.tgz#e1cf817d70a1e118e81922c4ff6683ce9d422e26"
-  integrity sha512-zrNj1+yqYF4WskCMOHwN+w9iuD12+dGm0rQ35HLl9/Ouuq52cEtd0CH9qMgrdNmi5ejC1/V7vKEXYubB+65DkA==
+"@types/node@*":
+  version "15.12.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.2.tgz#1f2b42c4be7156ff4a6f914b2fb03d05fa84e38d"
+  integrity sha512-zjQ69G564OCIWIOHSXyQEEDpdpGl+G348RAKY0XXy9Z5kU9Vzv1GMNnkar/ZJ8dzXB3COzD9Mo9NtRZ4xfgUww==
 
 "@types/qs@*":
   version "6.9.6"
@@ -378,6 +378,11 @@ chownr@^1.1.1:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
   integrity sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
+
+class-transformer@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.4.0.tgz#b52144117b423c516afb44cc1c76dbad31c2165b"
+  integrity sha512-ETWD/H2TbWbKEi7m9N4Km5+cw1hNcqJSxlSYhsLsNjQzWWiZIYA1zafxpK9PwVfaZ6AqR5rrjPVUBGESm5tQUA==
 
 cli-highlight@^2.1.10:
   version "2.1.11"
@@ -2109,10 +2114,10 @@ typeorm@^0.2.34:
     yargs "^16.2.0"
     zen-observable-ts "^1.0.0"
 
-typescript@^4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.4.tgz#3f85b986945bcf31071decdd96cf8bfa65f9dcbc"
-  integrity sha512-uauPG7XZn9F/mo+7MrsRjyvbxFpzemRjKEZXS4AK83oP2KKOJPvb+9cO/gmnv8arWZvhnjVOXz7B49m1l0e9Ew==
+typescript@^4.3.3:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.3.tgz#5401db69bd3203daf1851a1a74d199cb3112c11a"
+  integrity sha512-rUvLW0WtF7PF2b9yenwWUi9Da9euvDRhmH7BLyBG4DCFfOJ850LGNknmRpp8Z8kXNUPObdZQEfKOiHtXuQHHKA==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
@@ -2140,6 +2145,11 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
@@ -2229,9 +2239,9 @@ yargonaut@^1.1.4:
     parent-require "^1.0.0"
 
 yargs-parser@^20.2.2:
-  version "20.2.9"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
-  integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
+  version "20.2.7"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.7.tgz#61df85c113edfb5a7a4e36eb8aa60ef423cbc90a"
+  integrity sha512-FiNkvbeHzB/syOjIUxFDCnhSfzAL8R5vs40MgLFBorXACCOAEaWu0gRZl14vG8MR9AOJIZbmkjhusqBYZ3HTHw==
 
 yargs@^16.0.0, yargs@^16.2.0:
   version "16.2.0"
