@@ -5,9 +5,12 @@ import "express-async-errors"
 import { router } from "./routes";
 
 import "./database";
-
+import cors from "cors"
 
 const app = express();
+
+//usar interface
+app.use(cors());
 
 app.use(express.json());
 
